@@ -1,12 +1,7 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# which you are expected to set up once and rarely edit after that.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -14,112 +9,114 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Runhua (Ivan) Xiao # Defaults to "Your New Jekyll Site"
-name: Runhua (Ivan) Xiao [cite: 1]
-email: rhxiao@ucdavis.edu [cite: 1]
-description: >- # this means to ignore newlines until "baseurl:"
-  PhD Candidate at UC Davis specializing in freight transportation systems, 
-  urban mobility, transportation emissions, sustainable logistics, 
-  and data-driven modeling. [cite: 1, 2, 3] 
-  # (Replace with your preferred bio if different)
-baseurl: "" # the subpath of your site, e.g. /blog. If your site is at https://username.github.io, leave this blank.
-url: "https://YOUR_GITHUB_USERNAME.github.io" # Replace YOUR_GITHUB_USERNAME with your actual GitHub username
-twitter_username: YOUR_TWITTER_USERNAME # Replace with your Twitter username (optional)
-github_username:  YOUR_GITHUB_USERNAME # Replace with your GitHub username
-linkedin_username: ivanrxiao # Extracted from your CV [cite: 1]
-scholar_userid: YOUR_GOOGLE_SCHOLAR_ID # Replace with your Google Scholar User ID (optional)
-orcid_id: YOUR_ORCID_ID # Replace with your ORCID ID (optional)
+title: Runhua (Ivan) Xiao # [cite: 1, 34] 您的名字或网站标题
+name: Runhua (Ivan) Xiao # [cite: 1, 34]
+email: rhxiao@ucdavis.edu # [cite: 1, 34]
+description: >- # SEO 描述，也会在一些主题中显示为简介
+  PhD Candidate in Civil and Environmental Engineering at UC Davis. [cite: 1, 34]
+  Research interests include freight transportation systems, urban mobility and parking, 
+  transportation emissions and air quality, sustainable freight and logistics, 
+  and data-driven transportation modeling and spatial analysis. [cite: 2, 35]
+baseurl: "" # 如果您的网站在 https://USERNAME.github.io/，则留空。如果是在子目录，例如 /blog，则填写 /blog。
+url: "https://YOUR_GITHUB_USERNAME.github.io" # 替换 YOUR_GITHUB_USERNAME 为您的 GitHub 用户名
+linkedin_username: ivanrxiao # 从您的 CV 中的 "linkedin.com/in/ivanrxiao" 提取 [cite: 1, 34]
+github_username: YOUR_GITHUB_USERNAME # 替换为您的 GitHub 用户名 (如果需要显示)
+twitter_username: YOUR_TWITTER_USERNAME # 替换为您的 Twitter 用户名 (可选)
+google_scholar_id: YOUR_GOOGLE_SCHOLAR_ID # 替换为您的 Google Scholar ID (可选)
+orcid_id: YOUR_ORCID_ID # 替换为您的 ORCID ID (可选)
 
-# Avatar
-avatar: /images/profile.jpg # Replace with the path to your avatar image, e.g., /assets/images/profile.jpg (optional)
+# 头像路径 (可选)
+avatar: /assets/images/profiel.jpg # 例如 /assets/images/ivan_xiao_profile.jpg
 
 # Analytics
-google_analytics: YOUR_GOOGLE_ANALYTICS_ID # Replace with your Google Analytics ID, e.g. UA-XXXXXXXX-X or G-XXXXXXXXXX (optional)
+google_analytics: YOUR_GOOGLE_ANALYTICS_ID # 例如 UA-XXXXXXXX-X 或 G-XXXXXXXXXX (可选)
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.24.0" # This is an example, common theme. Change if your template uses a different one or none.
-# theme: minimal-mistakes-jekyll # Another way to specify a theme, if it's installed as a gem
+# theme: jekyll-theme-minimal # 如果您通过 GitHub Pages 设置选择了主题，这里可以注释掉或删除
+# remote_theme: mmistakes/minimal-mistakes@4.24.0 # 如果您想使用 Minimal Mistakes 主题，这是一个例子
 
-# Plugins (some common ones, your theme might have its own list)
+# Plugins (根据您的主题需求调整)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  # - jekyll-gist # If you plan to embed GitHub Gists
-  # - jekyll-scholar # If your theme uses this for publications
+  # - jekyll-include-cache # Minimal Mistakes 主题常用
 
-# Locale (Language and regional settings)
-locale: "en-US" # Or "en", "zh-CN", etc. based on your preference
+# Locale (语言和区域设置)
+locale: "en-US" # 例如 en, en-US, zh-CN
 
-# Author information (often used by themes like Minimal Mistakes for structured data and author box)
+# Author information (许多主题使用此结构来显示作者信息)
 author:
-  name: Runhua (Ivan) Xiao [cite: 1]
-  avatar: /assets/images/YOUR_AVATAR_FILENAME.jpg # Should be same as above
-  bio: "PhD Candidate in Civil and Environmental Engineering at UC Davis." # A slightly shorter bio, can be same as description or different
-  location: "Davis, CA" # Optional
+  name: Runhua (Ivan) Xiao # [cite: 1, 34]
+  avatar: /assets/images/YOUR_AVATAR_FILENAME.jpg # 与上面的头像路径一致
+  bio: "PhD Candidate, UC Davis. Focusing on sustainable freight, truck parking, and environmental justice." # [cite: 3] 简短版本的简介
+  location: "Davis, CA" # [cite: 1, 34] (基于 UC Davis)
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square" # Font Awesome icon
-      url: "mailto:rhxiao@ucdavis.edu" [cite: 1]
-    - label: "Website"
+      icon: "fas fa-fw fa-envelope-square" # Font Awesome 图标
+      url: "mailto:rhxiao@ucdavis.edu" # [cite: 1, 34]
+    - label: "Website" # 或者 "Personal Website"
       icon: "fas fa-fw fa-link"
-      url: "https://YOUR_GITHUB_USERNAME.github.io" # Your main site URL
+      url: "https://YOUR_GITHUB_USERNAME.github.io"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/ivanrxiao" [cite: 1]
+      url: "https://linkedin.com/in/ivanrxiao" # [cite: 1, 34]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/YOUR_GITHUB_USERNAME"
-    # - label: "Twitter"
+    # - label: "Twitter" # 如果您提供了 Twitter 用户名
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/YOUR_TWITTER_USERNAME"
-    # - label: "Google Scholar"
-    #   icon: "fas fa-fw fa-graduation-cap" # Or use a specific Google Scholar icon if available
+    # - label: "Google Scholar" # 如果您提供了 Google Scholar ID
+    #   icon: "fas fa-fw fa-graduation-cap"
     #   url: "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-    # - label: "ORCID"
-    #   icon: "fab fa-fw fa-orcid" # Or use a specific ORCID icon
+    # - label: "ORCID" # 如果您提供了 ORCID ID
+    #   icon: "fab fa-fw fa-orcid"
     #   url: "https://orcid.org/YOUR_ORCID_ID"
 
-# Defaults for collections (e.g., posts, projects). This depends heavily on your chosen theme/template.
-# Example for a blog posts collection:
+# Footer Links (一些主题允许自定义页脚链接)
+# footer_links:
+#   - title: GitHub
+#     url: https://github.com/YOUR_GITHUB_USERNAME
+#     icon: fab fa-github-square
+
+# Collections (如果您的主题使用 Jekyll Collections 来组织内容，例如作品集、项目等)
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
+
+# Defaults for collections (为不同类型的内容设置默认布局和其他元数据)
 # defaults:
+#   # _posts
 #   - scope:
 #       path: ""
-#       type: "posts"
+#       type: posts
 #     values:
-#       layout: "single" # Default layout for posts
-#       author_profile: true # Show author profile on posts
+#       layout: single
+#       author_profile: true
 #       read_time: true
-#       comments: true
+#       comments: true # 如果您集成了评论系统
 #       share: true
 #       related: true
-#   # Example for pages:
+#   # _pages
 #   - scope:
 #       path: "_pages"
-#       type: "pages"
+#       type: pages
 #     values:
-#       layout: "single"
+#       layout: single
 #       author_profile: true
-
-# Footer content / Navigation (highly theme-dependent)
-# footer_links:
-#   - title: "Home"
-#     url: "/"
-#   - title: "About"
-#     url: "/about/"
-#   - title: "CV"
-#     url: "/assets/pdf/CV_RunhuaXiao_202505.pdf" # Assuming you might link to your CV pdf
 
 # ---
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE.txt
