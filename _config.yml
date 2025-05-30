@@ -26,7 +26,7 @@ google_scholar_id: YOUR_GOOGLE_SCHOLAR_ID # 替换为您的 Google Scholar ID (�
 orcid_id: YOUR_ORCID_ID # 替换为您的 ORCID ID (可选)
 
 # 头像路径 (可选)
-avatar: /assets/images/profiel.jpg # 例如 /assets/images/ivan_xiao_profile.jpg
+avatar: /images/profiel.jpg
 
 # Analytics
 google_analytics: YOUR_GOOGLE_ANALYTICS_ID # 例如 UA-XXXXXXXX-X 或 G-XXXXXXXXXX (可选)
